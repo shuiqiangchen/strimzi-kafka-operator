@@ -49,9 +49,7 @@ public class KafkaClusterSpec implements Serializable {
     public static final String DEFAULT_TLS_SIDECAR_IMAGE =
             System.getenv().getOrDefault("STRIMZI_DEFAULT_TLS_SIDECAR_KAFKA_IMAGE", "strimzi/kafka-stunnel:latest");
 
-    public static final String FORBIDDEN_PREFIXES = "listeners, advertised., broker., listener., host.name, port, "
-            + "inter.broker.listener.name, sasl., ssl., security., password., principal.builder.class, log.dir, "
-            + "zookeeper.connect, zookeeper.set.acl, authorizer., super.user";
+    public static final String FORBIDDEN_PREFIXES = "";
 
     protected Storage storage;
 
